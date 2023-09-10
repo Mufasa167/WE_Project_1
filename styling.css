@@ -1,0 +1,166 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#footer {
+    position:relative;
+    padding: 10px 10px 0px 10px;
+    top: 10%;
+    width: 100%;
+    /* Height of the footer*/
+    background-color:transparent ;
+    color: black;
+    z-index: 1;
+    text-align: left;
+    margin-top: auto;
+    margin-left: 15px;
+}
+
+#footer2 {
+    position:relative;
+    padding: 10px 10px 0px 10px;
+    top: 85%;
+    width: 100%;
+    /* Height of the footer*/
+    background-color:transparent ;
+    color: black;
+    z-index: 1;
+    text-align:left;
+    margin-top: auto;
+    margin-left: 350px;    
+}
+
+body{
+    color: whitesmoke;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+.desktop{
+    display:none;
+}
+
+@media(min-width: 768px){
+
+.desktop{
+    display:initial;
+}
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    position: relative;
+    top:0;
+    z-index: 2;
+    width: 100%;
+}
+
+a.logo{
+    height: 12px;
+    width:100px;
+    color: inherit;
+}
+header a{
+    color: inherit;
+}
+
+header nav a{
+text-decoration: none;
+padding: 5px 10px;
+}
+
+header nav.center{
+    text-align:center;
+}
+
+
+header nav.right{
+    text-align: right;
+}
+
+
+
+
+section{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#background-video {
+    width: 100vw;
+    object-fit: cover;  
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+  }
+
+ section .content{
+   width: 100%;
+   height: 100vh;
+   padding-top: 15vh;
+   padding-bottom: 15vh;
+   text-align: center;
+   display: grid;
+   grid-template-rows: min-content auto min min-content;
+  }
+
+
+  section .buttons a{
+    display:;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    padding: 12px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+section .buttons a:first-child{
+    background-color: #444;
+    color: white;
+}
+
+section .buttons{
+    display: grid;
+    row-gap: 10px;
+    
+}
+
+section .buttons :hover{
+    cursor: pointer;
+    background-color: ;
+}
+
+  @media(min-width: 768px){
+    section .buttons{
+        max-width: 640px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+  }
+  section h1{
+    font-size: 3rem;
+  }
+
+  section a{
+    color: black;
+  }
+
+  
+
+  
